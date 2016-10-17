@@ -1,0 +1,818 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/cody/Documents/KiCad/CHIP_IO_Breakout/CHIP_IO_Breakout.sch</source>
+    <date>Sun 16 Oct 2016 06:44:56 PM PDT</date>
+    <tool>Eeschema Rev-6964-Dev Build</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>C.H.I.P. IO Breakout with ADC &amp; DAC</title>
+        <company>Cody Nybo</company>
+        <rev>1</rev>
+        <date>2016-10-14</date>
+        <source>CHIP_IO_Breakout.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="P13">
+      <value>GPIO</value>
+      <footprint>w_conn_strip:vasch_strip_17x2</footprint>
+      <libsource lib="conn" part="CONN_02X17"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>578EC973</tstamp>
+    </comp>
+    <comp ref="IC1">
+      <value>MAX11629</value>
+      <footprint>Housings_SSOP:SSOP-16_3.9x4.9mm_Pitch0.635mm</footprint>
+      <datasheet>http://datasheets.maximintegrated.com/en/ds/MAX11626-MAX11633.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">MAX11629EEE+-ND</field>
+        <field name="Manufacturer">Maxim Integrated</field>
+        <field name="Package">16-SSOP (3.90mm)</field>
+      </fields>
+      <libsource lib="custom_integrated_circuit" part="MAX11629"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>578EF2D9</tstamp>
+    </comp>
+    <comp ref="IC2">
+      <value>MAX5702</value>
+      <footprint>Housings_SSOP:MSOP-10_3x3mm_Pitch0.5mm</footprint>
+      <datasheet>https://datasheets.maximintegrated.com/en/ds/MAX5700-MAX5702.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">MAX5702AAUB+-ND</field>
+        <field name="Manufacturer">Maxim Integrated</field>
+        <field name="Package">10-MSOP (3.00mm)</field>
+      </fields>
+      <libsource lib="custom_integrated_circuit" part="MAX5702"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>578F3C2D</tstamp>
+    </comp>
+    <comp ref="P5">
+      <value>I2C</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x04</footprint>
+      <libsource lib="conn" part="CONN_01X04"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57901F95</tstamp>
+    </comp>
+    <comp ref="IC3">
+      <value>MCP6L01</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23-5</footprint>
+      <datasheet>http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en540137</datasheet>
+      <fields>
+        <field name="DigiKey">MCP6L01T-E/OTCT-ND</field>
+        <field name="Manufacturer">Microchip</field>
+        <field name="Package">SOT-23-5</field>
+      </fields>
+      <libsource lib="linear" part="MCP6001"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5790F78B</tstamp>
+    </comp>
+    <comp ref="JP1">
+      <value>Jumper_NC_Small</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x02</footprint>
+      <libsource lib="device" part="Jumper_NC_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>579374D0</tstamp>
+    </comp>
+    <comp ref="L1">
+      <value>100µH</value>
+      <footprint>capacitor_smd:C_1210</footprint>
+      <datasheet>http://ds.yuden.co.jp/TYCOMPAS/ut/detail.do?productNo=CBC3225T101MR&amp;fileName=CBC3225T101MR_SS&amp;mode=specSheetDownload</datasheet>
+      <fields>
+        <field name="DigiKey">587-1628-1-ND</field>
+        <field name="Manufacturer">Taiyo Yuden</field>
+        <field name="Tolerance">20%</field>
+        <field name="Current">270mA</field>
+        <field name="Package">1210</field>
+      </fields>
+      <libsource lib="device" part="INDUCTOR_SMALL"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>578FF472</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>10µF</value>
+      <footprint>capacitor_smd:C_0805</footprint>
+      <datasheet>http://www.samsungsem.com/kr/support/product-search/mlcc/CL21A106KQFNNNG.jsp</datasheet>
+      <fields>
+        <field name="DigiKey">1276-6457-1-ND</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="Voltage">6.3V</field>
+        <field name="Tolerance">10%</field>
+        <field name="Temp Co">X5R</field>
+        <field name="Package">0805</field>
+      </fields>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>578FF927</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>10µF</value>
+      <footprint>capacitor_smd:C_0805</footprint>
+      <datasheet>http://www.samsungsem.com/kr/support/product-search/mlcc/CL21A106KQFNNNG.jsp</datasheet>
+      <fields>
+        <field name="DigiKey">1276-6457-1-ND</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="Voltage">6.3V</field>
+        <field name="Tolerance">10%</field>
+        <field name="Temp Co">X5R</field>
+        <field name="Package">0805</field>
+      </fields>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5790090B</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>1µF</value>
+      <footprint>capacitor_smd:C_0603</footprint>
+      <datasheet>http://www.samsungsem.com/kr/support/product-search/mlcc/CL21A106KQFNNNG.jsp</datasheet>
+      <fields>
+        <field name="DigiKey">1276-6524-1-ND</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="Voltage">16V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Temp Co">X7R</field>
+        <field name="Package">0603</field>
+      </fields>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57900E01</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>1µF</value>
+      <footprint>capacitor_smd:C_0603</footprint>
+      <datasheet>http://www.samsungsem.com/kr/support/product-search/mlcc/CL21A106KQFNNNG.jsp</datasheet>
+      <fields>
+        <field name="DigiKey">1276-6524-1-ND</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="Voltage">16V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Temp Co">X7R</field>
+        <field name="Package">0603</field>
+      </fields>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57900F06</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>0.1µF</value>
+      <footprint>capacitor_smd:C_0402</footprint>
+      <datasheet>http://www.samsungsem.com/kr/support/product-search/mlcc/CL21A106KQFNNNG.jsp</datasheet>
+      <fields>
+        <field name="DigiKey">1276-1001-1-ND</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="Voltage">16V</field>
+        <field name="Tolerance">10%</field>
+        <field name="Temp Co">X7R</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57900FA2</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>0.1µF</value>
+      <footprint>capacitor_smd:C_0402</footprint>
+      <datasheet>http://www.samsungsem.com/kr/support/product-search/mlcc/CL21A106KQFNNNG.jsp</datasheet>
+      <fields>
+        <field name="DigiKey">1276-1001-1-ND</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="Voltage">16V</field>
+        <field name="Tolerance">10%</field>
+        <field name="Temp Co">X7R</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>579010B1</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>0.1µF</value>
+      <footprint>capacitor_smd:C_0402</footprint>
+      <datasheet>http://www.samsungsem.com/kr/support/product-search/mlcc/CL21A106KQFNNNG.jsp</datasheet>
+      <fields>
+        <field name="DigiKey">1276-1001-1-ND</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="Voltage">16V</field>
+        <field name="Tolerance">10%</field>
+        <field name="Temp Co">X7R</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>579064CC</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>0.1µF</value>
+      <footprint>capacitor_smd:C_0402</footprint>
+      <datasheet>http://www.samsungsem.com/kr/support/product-search/mlcc/CL21A106KQFNNNG.jsp</datasheet>
+      <fields>
+        <field name="DigiKey">1276-1001-1-ND</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="Voltage">16V</field>
+        <field name="Tolerance">10%</field>
+        <field name="Temp Co">X7R</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57907762</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>0.1µF</value>
+      <footprint>capacitor_smd:C_0402</footprint>
+      <datasheet>http://www.samsungsem.com/kr/support/product-search/mlcc/CL21A106KQFNNNG.jsp</datasheet>
+      <fields>
+        <field name="DigiKey">1276-1001-1-ND</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="Voltage">16V</field>
+        <field name="Tolerance">10%</field>
+        <field name="Temp Co">X7R</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>579077E4</tstamp>
+    </comp>
+    <comp ref="P7">
+      <value>SPI2</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x06</footprint>
+      <libsource lib="conn" part="CONN_01X06"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5790D738</tstamp>
+    </comp>
+    <comp ref="P8">
+      <value>SPI3</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x06</footprint>
+      <libsource lib="conn" part="CONN_01X06"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57912147</tstamp>
+    </comp>
+    <comp ref="P9">
+      <value>SPI4</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x06</footprint>
+      <libsource lib="conn" part="CONN_01X06"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57912277</tstamp>
+    </comp>
+    <comp ref="P10">
+      <value>SPI5</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x06</footprint>
+      <libsource lib="conn" part="CONN_01X06"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57912281</tstamp>
+    </comp>
+    <comp ref="P11">
+      <value>SPI6</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x06</footprint>
+      <libsource lib="conn" part="CONN_01X06"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57912AE6</tstamp>
+    </comp>
+    <comp ref="P12">
+      <value>SPI7</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x06</footprint>
+      <libsource lib="conn" part="CONN_01X06"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57912AF0</tstamp>
+    </comp>
+    <comp ref="P14">
+      <value>Power</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x06</footprint>
+      <libsource lib="conn" part="CONN_01X06"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>579287F3</tstamp>
+    </comp>
+    <comp ref="P1">
+      <value>Digital</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_2x08</footprint>
+      <libsource lib="conn" part="CONN_02X08"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57D7B9BB</tstamp>
+    </comp>
+    <comp ref="P2">
+      <value>Analog</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_2x08</footprint>
+      <libsource lib="conn" part="CONN_02X08"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57D80BA4</tstamp>
+    </comp>
+    <comp ref="P3">
+      <value>I2C</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x04</footprint>
+      <libsource lib="conn" part="CONN_01X04"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57D9D514</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="conn" part="CONN_01X04">
+      <footprints>
+        <fp>Pin_Header_Straight_1X04</fp>
+        <fp>Pin_Header_Angled_1X04</fp>
+        <fp>Socket_Strip_Straight_1X04</fp>
+        <fp>Socket_Strip_Angled_1X04</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_01X04</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+        <pin num="4" name="P4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_01X06">
+      <footprints>
+        <fp>Pin_Header_Straight_1X06</fp>
+        <fp>Pin_Header_Angled_1X06</fp>
+        <fp>Socket_Strip_Straight_1X06</fp>
+        <fp>Socket_Strip_Angled_1X06</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_01X06</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+        <pin num="4" name="P4" type="passive"/>
+        <pin num="5" name="P5" type="passive"/>
+        <pin num="6" name="P6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_02X08">
+      <footprints>
+        <fp>Pin_Header_Straight_2X08</fp>
+        <fp>Pin_Header_Angled_2X08</fp>
+        <fp>Socket_Strip_Straight_2X08</fp>
+        <fp>Socket_Strip_Angled_2X08</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_02X08</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+        <pin num="4" name="P4" type="passive"/>
+        <pin num="5" name="P5" type="passive"/>
+        <pin num="6" name="P6" type="passive"/>
+        <pin num="7" name="P7" type="passive"/>
+        <pin num="8" name="P8" type="passive"/>
+        <pin num="9" name="P9" type="passive"/>
+        <pin num="10" name="P10" type="passive"/>
+        <pin num="11" name="P11" type="passive"/>
+        <pin num="12" name="P12" type="passive"/>
+        <pin num="13" name="P13" type="passive"/>
+        <pin num="14" name="P14" type="passive"/>
+        <pin num="15" name="P15" type="passive"/>
+        <pin num="16" name="P16" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_02X17">
+      <footprints>
+        <fp>Pin_Header_Straight_2X17</fp>
+        <fp>Pin_Header_Angled_2X17</fp>
+        <fp>Socket_Strip_Straight_2X17</fp>
+        <fp>Socket_Strip_Angled_2X17</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_02X17</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+        <pin num="4" name="P4" type="passive"/>
+        <pin num="5" name="P5" type="passive"/>
+        <pin num="6" name="P6" type="passive"/>
+        <pin num="7" name="P7" type="passive"/>
+        <pin num="8" name="P8" type="passive"/>
+        <pin num="9" name="P9" type="passive"/>
+        <pin num="10" name="P10" type="passive"/>
+        <pin num="11" name="P11" type="passive"/>
+        <pin num="12" name="P12" type="passive"/>
+        <pin num="13" name="P13" type="passive"/>
+        <pin num="14" name="P14" type="passive"/>
+        <pin num="15" name="P15" type="passive"/>
+        <pin num="16" name="P16" type="passive"/>
+        <pin num="17" name="P17" type="passive"/>
+        <pin num="18" name="P18" type="passive"/>
+        <pin num="19" name="P19" type="passive"/>
+        <pin num="20" name="P20" type="passive"/>
+        <pin num="21" name="P21" type="passive"/>
+        <pin num="22" name="P22" type="passive"/>
+        <pin num="23" name="P23" type="passive"/>
+        <pin num="24" name="P24" type="passive"/>
+        <pin num="25" name="P25" type="passive"/>
+        <pin num="26" name="P26" type="passive"/>
+        <pin num="27" name="P27" type="passive"/>
+        <pin num="28" name="P28" type="passive"/>
+        <pin num="29" name="P29" type="passive"/>
+        <pin num="30" name="P30" type="passive"/>
+        <pin num="31" name="P31" type="passive"/>
+        <pin num="32" name="P32" type="passive"/>
+        <pin num="33" name="P33" type="passive"/>
+        <pin num="34" name="P34" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="C_Small">
+      <footprints>
+        <fp>C?</fp>
+        <fp>C_????_*</fp>
+        <fp>C_????</fp>
+        <fp>SMD*_c</fp>
+        <fp>Capacitor*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Small</field>
+        <field name="DigiKey">-</field>
+        <field name="Manufacturer">-</field>
+        <field name="Voltage">-</field>
+        <field name="Tolerance">-</field>
+        <field name="Temp Co">-</field>
+        <field name="Package">-</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="INDUCTOR_SMALL">
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">INDUCTOR_SMALL</field>
+        <field name="DigiKey">-</field>
+        <field name="Manufacturer">-</field>
+        <field name="Tolerance">-</field>
+        <field name="Current">-</field>
+        <field name="Package">-</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="input"/>
+        <pin num="2" name="2" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="Jumper_NC_Small">
+      <fields>
+        <field name="Reference">JP</field>
+        <field name="Value">Jumper_NC_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="custom_integrated_circuit" part="MAX11629">
+      <description>12 Bit 8CH SAR ADC</description>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">MAX11629</field>
+        <field name="Footprint">Housings_SSOP:SSOP-16_3.9x4.9mm_Pitch0.635mm</field>
+        <field name="Datasheet">http://datasheets.maximintegrated.com/en/ds/MAX11626-MAX11633.pdf</field>
+        <field name="DigiKey">MAX11629EEE+-ND</field>
+        <field name="Manufacturer">Maxim Integrated</field>
+        <field name="Package">16-SSOP (3.90mm)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="AIN0" type="input"/>
+        <pin num="2" name="AIN1" type="input"/>
+        <pin num="3" name="AIN2" type="input"/>
+        <pin num="4" name="AIN3" type="input"/>
+        <pin num="5" name="AIN4" type="input"/>
+        <pin num="6" name="AIN5" type="input"/>
+        <pin num="7" name="AIN6" type="input"/>
+        <pin num="8" name="AIN7" type="input"/>
+        <pin num="9" name="Ref" type="input"/>
+        <pin num="10" name="GND" type="power_in"/>
+        <pin num="11" name="VCC" type="power_in"/>
+        <pin num="12" name="~CS" type="input"/>
+        <pin num="13" name="SCK" type="input"/>
+        <pin num="14" name="MOSI" type="input"/>
+        <pin num="15" name="MISO" type="output"/>
+        <pin num="16" name="~EOC" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="custom_integrated_circuit" part="MAX5702">
+      <description>12 Bit Dual DAC</description>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">MAX5702</field>
+        <field name="Footprint">Housings_SSOP:MSOP-10_3x3mm_Pitch0.5mm</field>
+        <field name="Datasheet">https://datasheets.maximintegrated.com/en/ds/MAX5700-MAX5702.pdf</field>
+        <field name="DigiKey">MAX5702AAUB+-ND</field>
+        <field name="Manufacturer">Maxim Integrated</field>
+        <field name="Package">10-MSOP (3.00mm)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="REF" type="input"/>
+        <pin num="2" name="OutA" type="output"/>
+        <pin num="3" name="OutB" type="output"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="VCC" type="power_in"/>
+        <pin num="6" name="MOSI" type="input"/>
+        <pin num="7" name="SCK" type="input"/>
+        <pin num="8" name="~CS" type="input"/>
+        <pin num="9" name="VDD" type="power_in"/>
+        <pin num="10" name="~CLR" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="linear" part="MCP6001">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MCP6001</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="output"/>
+        <pin num="2" name="V-" type="input"/>
+        <pin num="3" name="+" type="input"/>
+        <pin num="4" name="-" type="input"/>
+        <pin num="5" name="V+" type="input"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="conn">
+      <uri>/home/cody/Documents/KiCad/libs/conn.lib</uri>
+    </library>
+    <library logical="custom_integrated_circuit">
+      <uri>/home/cody/Documents/KiCad/libs/custom_integrated_circuit.lib</uri>
+    </library>
+    <library logical="device">
+      <uri>/home/cody/Documents/KiCad/libs/device.lib</uri>
+    </library>
+    <library logical="linear">
+      <uri>/home/cody/Documents/KiCad/libs/linear.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/CS6">
+      <node ref="P11" pin="5"/>
+      <node ref="P13" pin="4"/>
+    </net>
+    <net code="2" name="/MISO">
+      <node ref="IC1" pin="15"/>
+      <node ref="P13" pin="12"/>
+      <node ref="P10" pin="4"/>
+      <node ref="P8" pin="4"/>
+      <node ref="P11" pin="4"/>
+      <node ref="P7" pin="4"/>
+      <node ref="P9" pin="4"/>
+      <node ref="P12" pin="4"/>
+    </net>
+    <net code="3" name="/MOSI">
+      <node ref="P9" pin="3"/>
+      <node ref="P13" pin="11"/>
+      <node ref="IC2" pin="6"/>
+      <node ref="IC1" pin="14"/>
+      <node ref="P10" pin="3"/>
+      <node ref="P12" pin="3"/>
+      <node ref="P8" pin="3"/>
+      <node ref="P11" pin="3"/>
+      <node ref="P7" pin="3"/>
+    </net>
+    <net code="4" name="/CS7">
+      <node ref="P13" pin="3"/>
+      <node ref="P12" pin="5"/>
+    </net>
+    <net code="5" name="/CS5">
+      <node ref="P13" pin="5"/>
+      <node ref="P10" pin="5"/>
+    </net>
+    <net code="6" name="/SCK">
+      <node ref="P12" pin="2"/>
+      <node ref="IC1" pin="13"/>
+      <node ref="P7" pin="2"/>
+      <node ref="IC2" pin="7"/>
+      <node ref="P13" pin="14"/>
+      <node ref="P11" pin="2"/>
+      <node ref="P8" pin="2"/>
+      <node ref="P10" pin="2"/>
+      <node ref="P9" pin="2"/>
+    </net>
+    <net code="7" name="/CS4">
+      <node ref="P13" pin="6"/>
+      <node ref="P9" pin="5"/>
+    </net>
+    <net code="8" name="+3V3">
+      <node ref="L1" pin="1"/>
+      <node ref="P14" pin="4"/>
+      <node ref="P14" pin="5"/>
+      <node ref="P14" pin="6"/>
+      <node ref="P3" pin="4"/>
+      <node ref="P13" pin="33"/>
+      <node ref="C3" pin="1"/>
+      <node ref="C1" pin="1"/>
+      <node ref="P5" pin="4"/>
+      <node ref="C2" pin="1"/>
+      <node ref="P13" pin="1"/>
+      <node ref="P7" pin="6"/>
+      <node ref="P11" pin="6"/>
+      <node ref="P12" pin="6"/>
+      <node ref="P10" pin="6"/>
+      <node ref="P8" pin="6"/>
+      <node ref="P9" pin="6"/>
+    </net>
+    <net code="9" name="/CS3">
+      <node ref="P8" pin="5"/>
+      <node ref="P13" pin="7"/>
+    </net>
+    <net code="10" name="/CS2">
+      <node ref="P7" pin="5"/>
+      <node ref="P13" pin="8"/>
+    </net>
+    <net code="11" name="/DAC1">
+      <node ref="IC2" pin="3"/>
+      <node ref="P2" pin="11"/>
+    </net>
+    <net code="12" name="/RefO">
+      <node ref="IC3" pin="4"/>
+      <node ref="IC3" pin="1"/>
+      <node ref="P2" pin="14"/>
+    </net>
+    <net code="13" name="/Ref">
+      <node ref="P2" pin="13"/>
+      <node ref="IC2" pin="1"/>
+      <node ref="IC1" pin="9"/>
+      <node ref="IC3" pin="3"/>
+    </net>
+    <net code="14" name="/DAC0">
+      <node ref="P2" pin="12"/>
+      <node ref="IC2" pin="2"/>
+    </net>
+    <net code="15" name="GND">
+      <node ref="P13" pin="34"/>
+      <node ref="P5" pin="1"/>
+      <node ref="IC2" pin="4"/>
+      <node ref="P13" pin="13"/>
+      <node ref="P13" pin="2"/>
+      <node ref="C6" pin="2"/>
+      <node ref="IC3" pin="2"/>
+      <node ref="C1" pin="2"/>
+      <node ref="C5" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="C4" pin="2"/>
+      <node ref="C3" pin="2"/>
+      <node ref="P10" pin="1"/>
+      <node ref="P11" pin="1"/>
+      <node ref="P12" pin="1"/>
+      <node ref="C9" pin="2"/>
+      <node ref="C8" pin="2"/>
+      <node ref="C7" pin="2"/>
+      <node ref="P7" pin="1"/>
+      <node ref="P8" pin="1"/>
+      <node ref="P9" pin="1"/>
+      <node ref="IC1" pin="10"/>
+      <node ref="P14" pin="3"/>
+      <node ref="P2" pin="10"/>
+      <node ref="P3" pin="1"/>
+      <node ref="P14" pin="2"/>
+      <node ref="P14" pin="1"/>
+      <node ref="P2" pin="9"/>
+    </net>
+    <net code="16" name="/XIO7">
+      <node ref="P13" pin="20"/>
+      <node ref="P1" pin="6"/>
+    </net>
+    <net code="17" name="/XIO5">
+      <node ref="P13" pin="17"/>
+      <node ref="P1" pin="4"/>
+    </net>
+    <net code="18" name="/XIO6">
+      <node ref="P1" pin="3"/>
+      <node ref="P13" pin="18"/>
+    </net>
+    <net code="19" name="/XIO3">
+      <node ref="P13" pin="15"/>
+      <node ref="P1" pin="2"/>
+    </net>
+    <net code="20" name="/XIO4">
+      <node ref="P13" pin="16"/>
+      <node ref="P1" pin="1"/>
+    </net>
+    <net code="21" name="/ADC1">
+      <node ref="IC1" pin="2"/>
+      <node ref="P2" pin="7"/>
+    </net>
+    <net code="22" name="+3.3VADC">
+      <node ref="IC3" pin="5"/>
+      <node ref="C6" pin="1"/>
+      <node ref="C7" pin="1"/>
+      <node ref="C8" pin="1"/>
+      <node ref="C9" pin="1"/>
+      <node ref="P2" pin="15"/>
+      <node ref="IC1" pin="11"/>
+      <node ref="P2" pin="16"/>
+      <node ref="IC2" pin="5"/>
+      <node ref="IC2" pin="9"/>
+      <node ref="IC2" pin="10"/>
+      <node ref="L1" pin="2"/>
+      <node ref="C4" pin="1"/>
+      <node ref="C5" pin="1"/>
+    </net>
+    <net code="23" name="/ADC7">
+      <node ref="IC1" pin="8"/>
+      <node ref="P2" pin="1"/>
+    </net>
+    <net code="24" name="/ADC6">
+      <node ref="IC1" pin="7"/>
+      <node ref="P2" pin="2"/>
+    </net>
+    <net code="25" name="/ADC5">
+      <node ref="P2" pin="3"/>
+      <node ref="IC1" pin="6"/>
+    </net>
+    <net code="26" name="/ADC4">
+      <node ref="P2" pin="4"/>
+      <node ref="IC1" pin="5"/>
+    </net>
+    <net code="27" name="/ADC3">
+      <node ref="IC1" pin="4"/>
+      <node ref="P2" pin="5"/>
+    </net>
+    <net code="28" name="/ADC2">
+      <node ref="IC1" pin="3"/>
+      <node ref="P2" pin="6"/>
+    </net>
+    <net code="29" name="/ADC0">
+      <node ref="IC1" pin="1"/>
+      <node ref="P2" pin="8"/>
+    </net>
+    <net code="30" name="/IO6">
+      <node ref="P13" pin="31"/>
+      <node ref="P1" pin="16"/>
+    </net>
+    <net code="31" name="/IO1">
+      <node ref="P1" pin="9"/>
+      <node ref="P13" pin="26"/>
+    </net>
+    <net code="32" name="/IO0">
+      <node ref="P13" pin="25"/>
+      <node ref="P1" pin="10"/>
+    </net>
+    <net code="33" name="/SDA2">
+      <node ref="P3" pin="3"/>
+      <node ref="P5" pin="3"/>
+      <node ref="P13" pin="24"/>
+    </net>
+    <net code="34" name="/SCL2">
+      <node ref="P3" pin="2"/>
+      <node ref="P13" pin="23"/>
+      <node ref="P5" pin="2"/>
+    </net>
+    <net code="35" name="/IO7">
+      <node ref="P1" pin="15"/>
+      <node ref="P13" pin="32"/>
+    </net>
+    <net code="36" name="/INT1">
+      <node ref="JP1" pin="2"/>
+      <node ref="JP1" pin="1"/>
+      <node ref="P1" pin="8"/>
+      <node ref="P13" pin="22"/>
+      <node ref="IC1" pin="16"/>
+    </net>
+    <net code="37" name="/INT3">
+      <node ref="P13" pin="21"/>
+      <node ref="P1" pin="7"/>
+    </net>
+    <net code="38" name="/IO5">
+      <node ref="P13" pin="30"/>
+      <node ref="P1" pin="13"/>
+    </net>
+    <net code="39" name="/CS0">
+      <node ref="IC1" pin="12"/>
+      <node ref="P13" pin="10"/>
+    </net>
+    <net code="40" name="/CS1">
+      <node ref="IC2" pin="8"/>
+      <node ref="P13" pin="9"/>
+    </net>
+    <net code="41" name="/IO4">
+      <node ref="P13" pin="29"/>
+      <node ref="P1" pin="14"/>
+    </net>
+    <net code="42" name="/PWM">
+      <node ref="P1" pin="5"/>
+      <node ref="P13" pin="19"/>
+    </net>
+    <net code="43" name="/IO3">
+      <node ref="P13" pin="28"/>
+      <node ref="P1" pin="11"/>
+    </net>
+    <net code="44" name="/IO2">
+      <node ref="P13" pin="27"/>
+      <node ref="P1" pin="12"/>
+    </net>
+  </nets>
+</export>
